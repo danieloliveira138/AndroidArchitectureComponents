@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.example.android.sunshine"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    kapt { // Source: https://github.com/google/dagger/issues/306
+        javacOptions {
+            option("-Xmaxerrs", 1000)
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+// Versions number variables are defined in the module build.gradle file
+dependencies {
+    implementation "com.android.support:appcompat-v7:27.1.1"
+    implementation "com.android.support:recyclerview-v7:27.1.1"
+    implementation"org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+//    implementation "androidx.databinding:databinding-compiler:3.5.0-alpha1"
+    implementation "com.android.support:preference-v7:27.1.1"
+    implementation "com.android.support.constraint:constraint-layout:$constraint_layout_version"
+    implementation "com.firebase:firebase-jobdispatcher:$firebase_jobdispatcher_version"
+    // Extensions = ViewModel + LiveData
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation "android.arch.lifecycle:runtime:1.1.1"
+    kapt "android.arch.lifecycle:compiler:1.1.1"
+// Room
+    implementation "android.arch.persistence.room:runtime:1.1.1"
+    kapt "android.arch.persistence.room:compiler:1.1.1"
+
+    kapt "android.arch.lifecycle:common-java8:1.1.1"
+
+    androidTestImplementation "junit:junit:$junit_version"
+    androidTestImplementation "com.android.support:support-annotations:$support_version"
+    androidTestImplementation "com.android.support.test:runner:$support_test_version"
+    androidTestImplementation "com.android.support.test:rules:$support_test_version"
+}
+

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.firebase:firebase-jobdispatcher:0.7.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.7.0.aar/1eff53a670c3967c31c325ce7290dea5/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.7.0.aar/1eff53a670c3967c31c325ce7290dea5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/caches/transforms-1/files-1.1/firebase-jobdispatcher-0.7.0.aar/1eff53a670c3967c31c325ce7290dea5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/.gradle/wrapper/dists/gradle-4.6-all/bcst21l2brirad8k2ben1letg/gradle-4.6/caches/modules-2/files-2.1/com.firebase/firebase-jobdispatcher/0.7.0/590c99f56f8262cb0fb65091c8d50aa78092b5fc/firebase-jobdispatcher-0.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
